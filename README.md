@@ -2,9 +2,11 @@
 
 ## 1. Présentation du projet
 
-Les maladies cardiaques sont l'une des principales causes de décès dans le monde, et leur prévention précoce est d'une importance capitale pour la santé publique. Dans le cadre de ce projet, nous avons utilisé un notebook Jupyter disponible sur Kaggle comme point de départ pour développer un modèle de prédiction des maladies cardiaques. Notre objectif était d'améliorer les performances du modèle existant en utilisant différentes techniques et approches.
+Les maladies cardiaques sont l'une des principales causes de décès dans le monde, et leur prévention précoce est d'une importance capitale pour la santé publique. Dans le cadre de ce projet, j'ai utilisé un notebook Jupyter disponible sur Kaggle comme point de départ pour développer un modèle de prédiction des maladies cardiaques. Mon objectif était d'améliorer les performances du modèle existant en utilisant différentes techniques et approches.
 
 [Lien Kaggle](https://www.kaggle.com/code/elouanguyon/pr-diction-maladies-cardiaques)
+
+IA utilisé: La régression logistique (apprentissage supervisé).
 
 ----
 
@@ -20,6 +22,11 @@ pip install -r requirements.txt
 
 ## 3. Amélioration du modèle
 
+Précision à améliorer:
+- Précision train: 0.8536585365853658 
+- Précision test: 0.824390243902439
+
+
 #### Etape 1:													
 Sélection des colonnes à conserver en fonction de leur corrélation.													
 Récupération des seuils au delà de 0.1 à 0.4													
@@ -30,7 +37,9 @@ Résultat
 ('Précision train: 0.8585365853658536', ' Précision test: 0.8390243902439024', 'Seuil de corrélation : 0.1')													
 ('Précision train: 0.8390243902439024', ' Précision test: 0.8341463414634146', 'Seuil de corrélation : 0.2')													
 ('Précision train: 0.8526829268292683', ' Précision test: 0.8292682926829268', 'Seuil de corrélation : 0.3')													
-('Précision train: 0.7902439024390244', ' Précision test: 0.7463414634146341', 'Seuil de corrélation : 0.4')													
+('Précision train: 0.7902439024390244', ' Précision test: 0.7463414634146341', 'Seuil de corrélation : 0.4')	
+
+0.824390243902439 à 0.8390243902439024
 ```
 													
 ### Etape 2:													
@@ -44,7 +53,9 @@ Résultat
 ('Précision train: 0.855609756097561', ' Précision test: 0.8341463414634146', 'Seuil de corrélation : 0.1')													
 ('Précision train: 0.8497560975609756', ' Précision test: 0.8439024390243902', 'Seuil de corrélation : 0.2')													
 ('Précision train: 0.8497560975609756', ' Précision test: 0.8292682926829268', 'Seuil de corrélation : 0.3')													
-('Précision train: 0.7951219512195122', ' Précision test: 0.7463414634146341', 'Seuil de corrélation : 0.4')													
+('Précision train: 0.7951219512195122', ' Précision test: 0.7463414634146341', 'Seuil de corrélation : 0.4')
+
+0.8390243902439024 à 0.8439024390243902
 ```												
 													
 ### Etape 3:													
@@ -67,7 +78,9 @@ Résultat
 ('Précision train: 0.8663414634146341', ' Précision test: 0.848780487804878', 'Seuil de corrélation : 0.1')													
 ('Précision train: 0.8468292682926829', ' Précision test: 0.8439024390243902', 'Seuil de corrélation : 0.2')													
 ('Précision train: 0.8390243902439024', ' Précision test: 0.8195121951219512', 'Seuil de corrélation : 0.3')													
-('Précision train: 0.7863414634146342', ' Précision test: 0.7414634146341463', 'Seuil de corrélation : 0.4')													
+('Précision train: 0.7863414634146342', ' Précision test: 0.7414634146341463', 'Seuil de corrélation : 0.4')
+
+0.8439024390243902 à 0.848780487804878
 ```
 ----												
 													
